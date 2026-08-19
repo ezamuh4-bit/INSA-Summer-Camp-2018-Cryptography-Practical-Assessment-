@@ -1,0 +1,17 @@
+INSA Summer Talent 2026 
+Cryptography Practical Assessment 
+Participant: John Doa 
+Date: 05 August 2026 
+Operating System: Windows 11
+
+-----------------------------------------------------------------------------
+# 1. Display the contents of message.txt
+Get-Content message.txt
+
+# 2 & 3. Generate hashes and save them to separate files
+(Get-FileHash message.txt -Algorithm MD5).Hash > md5.txt
+(Get-FileHash message.txt -Algorithm SHA1).Hash > sha1.txt
+(Get-FileHash message.txt -Algorithm SHA256).Hash > sha256.txt
+================================================================================
+A cryptographic hash function changes completely when you change one character because of the avalanche effect. This core design rule ensures that any tiny input change causes about half of the output bits to flip, making past and future data look totally unrelated.
+this why it change
